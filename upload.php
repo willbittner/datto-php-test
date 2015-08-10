@@ -106,38 +106,8 @@ if ($uploadOk == 0) {
 
 }
 
-     //$fh       = fopen($target_file, 'r' );
-
-?>
-     	$letterCount     = array();
-     $letters = str_split($wrd);
-     foreach($letters as $let) {
-        $letterCount[$let] += 1;
-            if($let != ' ') {
-                
-            
-     			if ( $letterCount[ $let ] > $highLetterCount ) {
-     			    
-				$highLetterCount = $letterCount[ $let ];
-				$highLetter      = $let;
-				$highword  = $wrd;
-			//	echo( "New leader!! :   $let ");
-     			}
-     	//		echo ("Letter:  $let   has count:  $letterCount[$let]");
-            }
-     }
-  
-     
-			
- }
-   echo ("Most Freq Letter:  $highLetter   has count: $highLetterCount the word $highword");
-}
-    // findBest($_FILES['uploadedfile']['tmp_name']);
-}
+   
 
 
-}
-
-     //$fh       = fopen($target_file, 'r' );
 
 ?>
